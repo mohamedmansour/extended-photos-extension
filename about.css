@@ -1,0 +1,141 @@
+
+html, body {
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+#container{
+  position: relative;
+	width: 1000px;
+	overflow: visible;
+	visibility: visible;
+	display: block;
+  margin: 0 auto;
+	box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 !0px #CCC;
+}
+#header {
+  position: absolute;
+  width: 800px;
+  margin: 0 auto;
+  height: 100px;
+  left: 100px;
+  opacity: 0.8;
+  background-color: white;
+  z-index: 1;
+}
+#header img {
+  width: 85px;
+  height: 85px;
+  float: left;
+  margin-left: 40px;
+  -webkit-transform: rotate(-25deg); 
+  -webkit-transition: -webkit-transform .15s linear; 
+}
+#header img:hover {
+  -webkit-transform: rotate(0);
+}
+#header p {
+  text-align: center;
+  color: #333;
+  font-size: 0.9em;
+  margin: 5px;
+}
+#note {
+  font-weight: bold;
+}
+#people-contents {
+  opacity: 0.9;
+}
+#people {
+  width: 100%;
+  height: 500px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.8);
+}
+#mohamed {
+  background: url(mohamed.jpg) center center;
+}
+#donate {
+ background-image: -webkit-linear-gradient(top, #2F2727, #1a82f7);
+}
+#options {
+  padding: 20px 50px;
+  background-color: white;
+}
+#options p {
+  display: inline-block;
+}
+#options p  label {
+  margin: 10px;
+}
+.person {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  float: left;
+  position: relative;
+  opacity: 0.9;
+  -webkit-transition: opacity .15s linear; 
+}
+.person:hover {
+  opacity: 1;
+}
+.column {
+  display: inline-block;
+  width: 340px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+#mohamed .column {
+  right: 0;
+  bottom: 10px;
+}
+
+#donate .column {
+  bottom: 100px;
+  left: 75px;
+  padding: 50px;
+  width: 250px;
+  box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.5);
+}
+#donate  {
+  color: white;
+  text-align: center;
+}
+.widget {
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+}
+
+#footer {
+  width: 1000px;
+  margin: 10px auto;
+  text-align: right;
+}
+
+#version {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
