@@ -1,6 +1,7 @@
 {
   "name": "Extended Photos for Google Plus",
   "version": "1.0.2",
+  "manifest_version": 2,
   "minimum_chrome_version": "18",
   "icons": {
     "48": "logo48.png",
@@ -16,5 +17,6 @@
     "matches": ["https://plus.google.com/*"],
     "js": ["extended_photos.js"],
     "run_at": "document_end"
-  }]
+  }],
+  "content_security_policy": "script-src 'self' https://picasaweb.google.com https://apis.google.com; object-src 'self'"
 }
